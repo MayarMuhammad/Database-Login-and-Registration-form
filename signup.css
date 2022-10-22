@@ -1,0 +1,228 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+#Div {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  grid-template-rows: 1fr 1fr 70px;
+  grid-template-areas:
+    ". . ."
+    ". RegisterForm  ."
+    ". . .";  
+}
+
+#RegisterForm {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px;
+  grid-template-areas:
+    ". EmailDiv ."
+    ". NameDiv ."
+    ". PasswordDiv ."
+    ". cPasswordDiv ."
+    ". SignupForm ."
+    ". LoginForm .";
+}
+
+#RegisterForm {
+  grid-area: RegisterForm;
+  justify-self: center;
+  align-self: end;
+}
+
+#NameDiv {
+  grid-area: NameDiv;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#EmailDiv {
+  grid-area: EmailDiv;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#PasswordDiv {
+  grid-area: PasswordDiv;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#cPasswordDiv {
+  grid-area: cPasswordDiv;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#SignupForm {
+  grid-area: SignupForm;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#LoginForm {
+  grid-area: LoginForm;
+  justify-self: center;
+  align-self: end;
+  margin: 5px;
+}
+
+#lEmail {
+  grid-area: lEmail;
+  justify-self: center;
+  align-self: end;
+}
+
+#Email {
+  grid-area: Email;
+  width: 487px;
+  height: 40px;
+  justify-self: center;
+  align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* margin-left: 110px; */
+}
+
+#lName {
+  grid-area: lEmail;
+  justify-self: left;
+  align-self: end;
+}
+
+#Name {
+  grid-area: Email;
+  width: 487px;
+  height: 40px;
+  justify-self: center;
+  align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* margin-left: 108px; */
+}
+
+#lPassword {
+  grid-area: lPassword;
+  justify-self: center;
+  align-self: end;
+}
+
+#Password {
+  grid-area: Password;
+  width: 487px;
+  height: 40px;
+  justify-self: center;
+  align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* margin-left: 85px; */
+}
+
+#lcPassword {
+  grid-area: lPassword;
+  justify-self: center;
+  align-self: end;
+}
+
+#cPassword {
+  grid-area: Password;
+  width: 487px;
+  height: 40px;
+  justify-self: center;
+  align-self: end;
+  border: 1px solid rgba(206, 199, 199, 0.87);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* margin-left: 30px; */
+}
+
+#Register {
+  grid-area: Signin;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #464444;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+}
+
+#lLogin {
+  grid-area: lPassword;
+  justify-self: center;
+  align-self: end;
+  /* margin-right: 16px; */
+}
+
+#link {
+  grid-area: link;
+}
+
+#Email:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Email:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Password:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Name:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Name:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#cPassword:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#cPassword:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Password:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+#Register:hover {
+  border: 1px solid #9c9a9a;
+  color: black;
+}
+
+.input{
+    grid-area: input;
+}
+.label{
+    grid-area: label;
+}

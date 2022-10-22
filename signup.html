@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign up</title>
+  <script type="text/javascript" src="validate.js"></script>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+  <form name="signup" action="register.php" onsubmit="return validateRegister()" method="post">
+    <div id="Div">
+      <div id="RegisterForm">
+        <div id="EmailDiv">
+          <h4 id="lEmail" class="label">Email</h4>
+          <input id="Email" type="email" name="email" class="input" />
+          <div id="NameDiv">
+            <h4 id="lName" class="label"> Name </h4>
+            <input id="Name" type="text" name="name" class="input" />
+          </div>
+          <div id="PasswordDiv">
+            <h4 id="lPassword" class="label"> Password </h4>
+            <input id="Password" type="password" name="password" class="input" />
+          </div>
+          <div id="cPasswordDiv">
+            <h4 id="lcPassword" class="label">Confirm Password </h4>
+            <input id="cPassword" type="password" name="cpassword" class="input" />
+          </div>
+          <div id="SignupForm">
+            <button id="Register" type="submit" name="Sign up">Sign up</button>
+          </div>
+          <div id="LoginForm">
+            <label id="lLogin"> Already have an account? </label>
+            <a id="link" href="login.html">Login Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

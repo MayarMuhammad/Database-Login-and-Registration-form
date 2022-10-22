@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Login</title>
+  <script type="text/javascript" src="validate.js"></script>
+  <link rel="stylesheet" href="login .css" />
+</head>
+
+<body>
+  <form name="login" action="login.php" onsubmit="return validateLogin()" method="post">
+    <div id="Div">
+      <div id="LoginForm">
+        <div id="Emaildiv">
+          <h4 id="lEmail"> Email </h4>
+          <input id="Email" type="text" name="email" />
+        </div>
+        <div id="PasswordDiv">
+          <h4 id="lPassword"> Password </h4>
+          <input id="Password" type="password" name="password" />
+        </div>
+        <div id="Submitdiv">
+          <button id="Signin" type="submit">Login</button>
+        </div>
+        <div id="RegisterDiv">
+          <Label id="lRegister">Don't have an account? </Label>
+          <a href="signup.html" id="link">Register Here</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
